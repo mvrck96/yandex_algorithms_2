@@ -1,2 +1,4 @@
 # yandex_algorithms_2
-B tier tasks from yandex.ru/yaintern/algorithm-training  
+B tier tasks from:
+
+https://yandex.ru/yaintern/algorithm-training
