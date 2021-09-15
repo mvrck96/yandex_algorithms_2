@@ -5,3 +5,4 @@ for l in lines:
     res[l[0]] += int(l[1])
 for k in sorted(res.keys()):
     print(k, res[k])
+    
