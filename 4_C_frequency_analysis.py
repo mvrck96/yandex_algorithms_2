@@ -1,13 +1,27 @@
-from itertools import chain
-
+words = {}
 with open("input.txt", "r") as f:
-    lines = list(map(lambda x: x.strip().split(), f.readlines()))
-    lines = list(chain(*lines))
+    lines = list(map(lambda x: x.split(), f.readlines()))
+    for l in lines:
+        for w in l:
+            words[w] = words.get(w, 0) + 1
 
 ans = []
-for w in lines:
-    if (lines.count(w), w) not in ans:
-        ans.append((lines.count(w), w))
+for w in words:
+    ans.append((-words[w], w))
+ans.sort()
+for a in ans:
+    print(a[1])
 
-print(sorted(ans, key=lambda x: (x[0], str(x[1]))))
-# Надо сделать лексиграфический обратный порядок для 2 элементов
+# ========================
+# from itertools import chain
+# from collections import Counter
+
+# with open("input.txt", "r") as f:
+#     words = Counter(list(chain(*map(lambda x: x.strip().split(), f.readlines()))))
+
+# ans = []
+# for w in words:
+#     ans.append((-words[w], w))
+# ans.sort()
+# for a in ans:
+#     print(a[1])
