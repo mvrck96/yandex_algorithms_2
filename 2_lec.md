@@ -1,5 +1,9 @@
 # Лекция 2. Линейный поиск
 
+https://www.youtube.com/watch?v=SKwB41FrGgU&list=PL6Wui14DvQPySdPv5NUqV3i8sDbHkCKC5&index=2
+
+## Линейный поиск
+
 Линейный поиск - перебор всех элементов последовательности
 
 Сложность такого поиска О(n)
